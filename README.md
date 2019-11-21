@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Pour tester l'appli:
 
-Things you may want to cover:
+* Cloner repo
 
-* Ruby version
+* bundle install
 
-* System dependencies
+* rails db:create, db:migrate, db:seed
 
-* Configuration
+* Lancer le serveur
 
-* Database creation
+* Aller au http://localhost:3000/
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* heroku: https://fierce-depths-91568.herokuapp.com/
