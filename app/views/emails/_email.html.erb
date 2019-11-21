@@ -1,2 +1,3 @@
-<td>"<%= email.object %>" <br> <%= email.body  %></td>
+<td id ="<%= email.id %>"><%=link_to email.object, email_path(email.id), remote: true %></td>
 
+<td></td>

@@ -1,4 +1,11 @@
-alert("js a coté droite")
 
-document.getElementById("show-mail").innerHTML = "<%= j render 'show_email', email: @email%>"
+var selectedEmail = document.getElementById("<%=@email.id%>");
+
+selectedEmail.addEventListener("click", function (){
+    selectedEmail.style.fontWeight = "bold"
+});
+
+
+selectedEmail.nextElementSibling.innerHTML = "<%= j render 'show_email', email: @email %>"
+
 

@@ -7,6 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'faker'
+
+Email.destroy_all
+
 3.times do
   my_category = Category.create(title: Faker::Book.genre)
   3.times do
@@ -20,6 +23,7 @@ end
 
 5.times do
 
-  email = Email.create(object: Faker::Lorem.words, body: Faker::Lorem.paragraph)
+  email = Email.create(object: Faker::Lorem.words, body: Faker::Lorem.paragraph, read: false)
+  
 
 end

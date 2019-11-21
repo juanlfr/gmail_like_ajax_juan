@@ -2,34 +2,31 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col">
       <br>
       <%= link_to emails_path, :action => :create, :method => :post, remote: true do %>
-        <input class="btn btn-primary float" type="submit" value="Recevoir un email"> <br>
-        <%end%>
+        <input class="btn btn-primary float" type="submit" value="Recevoir un email"> 
+        <%end%><br>
         <table class="table">
         <thead>
             <tr>
             <th scope="col">Emails</th>
+            <th scope="col">Content</th>
             </tr>
         </thead>
         
         <tbody id = "email">
         <% @emails.each do |email| %>
-            <tr>
-            <td><%=link_to email.object, email_path(email.id), remote: true %><br>
-            <%= email.body %>
-          
+            <tr id = "del<%= email.id %>">
+            <td id ="<%= email.id %>">
+            <%=link_to email.object, email_path(email.id), remote: true %></td>
+
+            <td></td>
             </tr>
         <%end%>
         </tbody>
             
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div id = "show-mail" class="col-md-6">
 
     </div>
-    </div>
-    </div>
+  </div>
+</div>

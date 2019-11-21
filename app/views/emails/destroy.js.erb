@@ -1,0 +1,6 @@
+$(document).ready(function() {
+
+  $("#del"+ <%= @email.id %>).fadeOut("slow", function(){
+    $(this).remove();
+  });
+});

@@ -1,2 +1,8 @@
-<h1> <%= email.object %> <br> </h1>
+
+<h1> <%= email.object %></h1>
 <p> <%= email.body  %> </p>
+
+<%= button_to('Destroy', email_path(email.id), action: "destroy", method: "delete", remote: true, data: { confirm: 'Are you sure?'}) %>
+
+
+<%= button_to "Marquer comme non lu", email_path(email.id), action: "update", method: "put", remote: true %>
