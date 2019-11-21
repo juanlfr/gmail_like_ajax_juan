@@ -1,0 +1,3 @@
+alert("je suis js")
+
+document.getElementById("<%=@category.title%>").insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>")
