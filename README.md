@@ -12,4 +12,4 @@ Pour tester l'appli:
 
 * Aller au http://localhost:3000/
 
-* heroku: https://fierce-depths-91568.herokuapp.com/
+
